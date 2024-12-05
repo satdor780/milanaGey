@@ -46,6 +46,9 @@ button{
   margin-top: -100px; /* Negative half of height. */
   margin-left: -250px; /* Negative half of width. */
   border-radius: 20px;
+  -webkit-box-shadow: 11px 8px 52px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 11px 8px 52px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 11px 8px 52px 0px rgba(34, 60, 80, 0.2);
 }
 
 .modal-content{

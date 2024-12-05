@@ -78,7 +78,7 @@ function App() {
     <>
 
 
-      <h1>pizda !</h1>
+      <h1>Викторина</h1>
 
       <div className="tests">
         {questions.map((q) => (
