@@ -1,0 +1,100 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tests{
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-gap: 20px;
+}
+
+.question{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer
+}
+
+span{
+  color: #000;
+  font-size: 20px;
+}
+
+button{
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: blueviolet;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.modal{
+  background: #fff;
+  /* padding: 20px;
+  max-width: 320px;
+  margin: 0 auto; */
+
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px; /* Negative half of height. */
+  margin-left: -250px; /* Negative half of width. */
+  border-radius: 20px;
+}
+
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.modal-content p{
+  color: #000;
+  max-width: 90%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+}
+
+
+@media (max-width: 1200px){
+
+  .tests{
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+
+
+@media (max-width: 750px){
+
+  .tests{
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .modal{
+    width: 300px;
+    margin-top: -100px; /* Negative half of height. */
+  margin-left: -150px; /* Negative half of width. */
+  }
+}
+
+@media (max-width: 480px){
+
+  .tests{
+    grid-template-columns: repeat(1, 2fr);
+  }
+}
